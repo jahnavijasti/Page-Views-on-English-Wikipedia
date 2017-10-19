@@ -37,7 +37,7 @@ finaldf$DATE <- finaldf$Date
 finaldf <- separate(finaldf, 'Date', c('year', 'month', 'day'), sep = '-')
 
 ## to write the dataframe into a csv and save it to local.
-write.csv(finaldf, file = "wikipedia-data.csv",row.names=FALSE)
+write.csv(finaldf, file = "en-wikipedia_traffic_200801-201709.csv",row.names=FALSE)
 
 ## to save the plot to local
 png(filename="plot.png", width = 580, height = 480, units = 'px')
