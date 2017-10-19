@@ -22,22 +22,23 @@ _plot_pageviews_pagecounts.R_ plots the trafiic data that is downloaded from dat
 A final dataset is created with the following fields
 
 year	
+
 month	
+
 pagecount_all_views	
+
 pagecount_desktop_views	
+
 pagecount_mobile_views	
+
 pageview_all_views	
+
 pageview_desktop_views	
+
 pageview_mobile_views	
 
 
 ## Analysis
 
-A time series graph is created from the dataset.
-
-## Source data License
-
-https://opensource.org/licenses/MIT
-
-
+A time series graph is created from the dataset. It represents the mobile and desktop traffic data of both Pagecounts and Pageviews, and also the total mobile and desktop data for each of the APIs.
 
