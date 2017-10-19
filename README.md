@@ -7,6 +7,6 @@ Pagecounts gives the desktop and mobile traffic data from January 2008 to July 2
 
 Pageviews gives the desktop, mobile web and mobile app data from July 2015 to September 2017.
 
-plot_pageviews_pagecounts.R plots the trafiic data that is downloaded from data_pageviews_pagecounts.ipynb
+_plot_pageviews_pagecounts.R_ plots the trafiic data that is downloaded from data_pageviews_pagecounts.ipynb
 
 
