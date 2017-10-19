@@ -19,8 +19,23 @@ Pageviews gives the desktop, mobile web and mobile app data from July 2015 to Se
 
 _plot_pageviews_pagecounts.R_ plots the trafiic data that is downloaded from data_pageviews_pagecounts.ipynb
 
+A final dataset is created with the following fields
 
-Source data License
+year	
+month	
+pagecount_all_views	
+pagecount_desktop_views	
+pagecount_mobile_views	
+pageview_all_views	
+pageview_desktop_views	
+pageview_mobile_views	
+
+
+## Analysis
+
+A time series graph is created from the dataset.
+
+## Source data License
 
 https://opensource.org/licenses/MIT
 
