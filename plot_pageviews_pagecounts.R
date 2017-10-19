@@ -36,14 +36,10 @@ finaldf$pageview_all_views <- finaldf$pageview_desktop_views + finaldf$pageview_
 finaldf$DATE <- finaldf$Date
 finaldf <- separate(finaldf, 'Date', c('year', 'month', 'day'), sep = '-')
 
+## to write the dataframe into a csv and save it to local.
 write.csv(finaldf, file = "wikipedia-data.csv",row.names=FALSE)
 
-#plot(finaldf$DATE, (finaldf$pagecount_desktop_views+finaldf$pageview_desktop_views)/1000000, type = 'l', color ='blue', lty = 2, ylim = c(0,12000))
-#lines(finaldf$DATE, (finaldf$pagecount_mobile_views+finaldf$pageview_mobile_views)/1000000, type="l", lty=2, col="brown")
-xmin<-min(finaldf$DATE,na.rm=T)
-xmax<-max(finaldf$DATE,na.rm=T)
-xseq<-seq.Date(xmin,xmax,by='1 month')
-
+## to save the plot to local
 png(filename="plot.png", width = 580, height = 480, units = 'px')
 
 plot(finaldf$DATE, finaldf$pagecount_desktop_views/1000000, type = 'l', lty = 2, lwd = 2,
